@@ -40,5 +40,5 @@ const yalo = async() => {
     font-size: 40px;
     width: fit-content;
     text-shadow: 3px 1px 4px grey;
-    text-align: center;">Your Link Was Sucessfully Generated ! <br> <a href="${link}" target="_blank">Here is the link!</a></h1>`);
+    text-align: center;">Your Link Was Sucessfully Generated ! <br> <a href="${link}" download target="_blank">Here is the link!</a></h1>`);
 }    
