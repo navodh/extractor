@@ -6,7 +6,7 @@
 //document.getElementById('myBtn').addEventListener('click', displayDate)
 const yalo = async() => {
     let res = document.getElementById('yturl').value;
-    if (!res.includes('https://') || !res.includes('youtube')){
+    if (!res.includes('https://') || !res.includes('youtu')){
         return alert('Give me a vaild url baka!');
     }
 
