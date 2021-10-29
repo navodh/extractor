@@ -1,37 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">  
 <head>
-    <title>hello</title>
-
-    <style>
-        .container {
-          height: 200px;
-          position: relative;
-          border: 3px solid green;
-        }
-        
-        .vertical-center {
-          margin: 0;
-          position: absolute center;
-          top: 50%;
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-        }
-        </style>    
+    <title>
+     Get youtube Thumbnails just in seconds :)
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <h1 id='yor' align='center'></h1>
-    <div class="vertical-center">
-        <button id="myBtn" align='center'> click here to get the link</button>
-    </div>   
-    <script>
-    const displayDate = () => {
-        let gotData = prompt('Enter your link')
-        gotData = gotData.split('/')[3].replace('watch?v=','')
-        document.write(`<h1 align='center'>Your video id successfully generated <i>${gotData}</i> </h1>`)
-    }
-    document.getElementById('myBtn').addEventListener('click', displayDate) 
-       
+    <h1>Get The Thumbnail Youtube Photo</h1>
+    <form class="form">
+        <input id="yturl" placeholder="Enter Your Youtube Url Here.. !" type="text"/>
+        <button id="downloadbutton" type="button" onclick="yalo();"> Generate Your Link </button>
+    </form>
+    <script src="src/jsfile.js">       
     </script>    
 </body>    
 </html>
