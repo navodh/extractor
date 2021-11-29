@@ -14,7 +14,8 @@
         <input id="yturl" placeholder="Enter Your Youtube Url Here.. !" type="text"/>
         <button id="downloadbutton" type="button" onclick="yalo();"> Generate Your Link </button>
     </form>
-    <script src="src/jsfile.js">       
+    <script id="erasable" type="text/javascript" src="src/jsfile.js">
+      document.getElementById('erasable').innerHTML = "";
     </script>    
 </body>    
 </html>
