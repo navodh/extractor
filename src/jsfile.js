@@ -1,44 +1,38 @@
-/*const displayDate = () => {
-        let gotData = prompt('Enter your link')
-        gotData = gotData.split('/')[3].replace('watch?v=','')
-        document.write(`<h1 align='center'>Your video id successfully generated <i>${gotData}</i> </h1>`)
-    }*/
-//document.getElementById('myBtn').addEventListener('click', displayDate)
-const yalo = async() => {
-    let res = document.getElementById('yturl').value;
-    if (!res.includes('https://') || !res.includes('youtu')){
-        return alert('Give me a vaild url baka!');
+(function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+  
+    let today = new Date(),
+        dd = String(today.getDate()).padStart(2, "0"),
+        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        yyyy = today.getFullYear(),
+        nextYear = yyyy + 1,
+        dayMonth = "02/09/",
+        birthday = dayMonth + yyyy;
+    
+    today = mm + "/" + dd + "/" + yyyy;
+    if (today > birthday) {
+      birthday = dayMonth + nextYear;
     }
 
-    if (res.includes('/shorts/')) {
-        if (res.includes('?feature=share')) {
-            var hjk = res.split('/')[4].replace('?feature=share', '')
-            res = hjk
-        } else {
-            var yui = res.split('/')[4]
-            res = yui
-        }
-    } else if (res.includes('watch')) {
-        var tsts = res.replace('watch?v=', '')
-        var hmm = tsts.split('/')[3]
-        res = hmm
-    } else {
-        var yoo = res.split('/')[3]
-        res = yoo
-    }
-
-    let link = `https://i.ytimg.com/vi/${res}/0.jpg`
-
-
-    await document.write(`<h1 style="margin: 0;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: sans-serif;
-    font-size: 40px;
-    width: fit-content;
-    text-shadow: 3px 1px 4px grey;
-    text-align: center;">Your Link Was Sucessfully Generated ! <br> <a href="${link}" download target="_blank">Here is the link!</a></h1>`);
-}    
+    const countDown = new Date(birthday).getTime(),
+        x = setInterval(function() {    
+  
+          const now = new Date().getTime(),
+                distance = countDown - now;
+  
+          document.getElementById("days").innerText = Math.floor(distance / (day)),
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+  
+          if (distance < 0) {
+            document.getElementById("headline").innerText = "Yoo A/L .. boi :(";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            clearInterval(x);
+          }
+        }, 0)
+    }());
