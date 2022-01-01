@@ -25,6 +25,16 @@ html {
   min-height: 100%;
 }
 
+.column {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
 body {
   display: flex;
   align-items: center;
