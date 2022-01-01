@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #f6f4f3;
+}
+
 html {
   display: grid;
   min-height: 100%;
@@ -19,13 +40,9 @@ body {
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  margin-top: 2em;
-  font-size: 1em;
+  font-weight: normal;
+  letter-spacing: .125rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #f6f4f3;
 }
 
 #timer {

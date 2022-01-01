@@ -27,9 +27,9 @@ let timer = setInterval(function() {
 <div class=\"hours\"> \
   <div class=\"numbers\">" + hours + "</div>hours</div> \
 <div class=\"minutes\"> \
-  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+  <div class=\"numbers\">" + minutes + "</div>minuts</div> \
 <div class=\"seconds\"> \
-  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+  <div class=\"numbers\">" + seconds + "</div>secods</div> \
 </div>";
 
 }, 1000);
