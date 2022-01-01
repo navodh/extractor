@@ -63,7 +63,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Lato", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.6em;
   letter-spacing: 5px;
   margin-top: 25%;
 }
@@ -74,7 +74,7 @@ h1 {
 .seconds {
   display: inline-block;
   padding: 20px;
-  width: 100px;
+  width: 95px;
   border-radius: 5px;
 }
 
@@ -97,7 +97,7 @@ h1 {
 .numbers {
   font-family: "Montserrat", sans-serif;
   color: #183059;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .white {
