@@ -10,14 +10,14 @@
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "02/09/",
-        birthday = dayMonth + yyyy;
+        al = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
+    if (today > al) {
+      al = dayMonth + nextYear;
     }
 
-    const countDown = new Date(birthday).getTime(),
+    const countDown = new Date(al).getTime(),
         x = setInterval(function() {    
   
           const now = new Date().getTime(),
