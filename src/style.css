@@ -22,6 +22,7 @@ h1 {
 
 html {
   display: grid;
+  overflow-x: hidden;
   min-height: 100%;
 }
 
@@ -37,6 +38,8 @@ html {
 
 body {
   display: flex;
+  overflow-x: hidden;
+  position: relative;
   align-items: center;
   background: #000000;
 }
