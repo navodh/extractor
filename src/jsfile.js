@@ -1,6 +1,6 @@
 const year = new Date().getFullYear();
-const lolsers = new Date(year, 1,9).getTime();
-const hahadev = new Date(year + 1, 1, 9).getTime();
+const lolsers = new Date(year, 11,25).getTime();
+const hahadev = new Date(year + 1, 11, 25).getTime();
 const month = new Date().getMonth();
 
 
