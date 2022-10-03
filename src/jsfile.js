@@ -3,9 +3,7 @@ const lolsers = new Date(year, 11,25).getTime();
 const hahadev = new Date(year, 11, 25).getTime();
 const month = new Date().getMonth();
 
-window.onload = function() { 
-     location.replace = "https://youtu.be/dQw4w9WgXcQ"; 
-}
+window.location.href = "https://youtu.be/dQw4w9WgXcQ"
 
 let timer = setInterval(function() {
 
